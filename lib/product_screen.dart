@@ -4,14 +4,16 @@ import 'product_detail_screen.dart';
 class ProductScreen extends StatelessWidget {
   final List<String> products = ["Product 1", "Product 2", "Product 3"];
 
+  ProductScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Products"),
+        title: const Text("Products"),
         actions: [
           IconButton(
-            icon: Icon(Icons.pie_chart),
+            icon: const Icon(Icons.pie_chart),
             onPressed: () {
               // Navigator.push(context MaterialPageRoute(builder: (context) => ChartScreen()));
             },

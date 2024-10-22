@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class ProductDetailScreen extends StatelessWidget {
   final String productName;
 
-  ProductDetailScreen({required this.productName});
+  // ignore: prefer_const_constructors_in_immutables
+  ProductDetailScreen({super.key, required this.productName});
 
   @override
   Widget build(BuildContext context) {
